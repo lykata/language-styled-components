@@ -5,7 +5,7 @@ scopeName: "source.styled"
 injectionSelector: "L:source -comment -string"
 patterns: [
 	{
-		contentName: "source.css"
+		contentName: "source.css.styled"
 		begin: "(?:([sS][tT][yY][lL][eE][dD](?:<[_$[:alpha:]][_$[[:alnum:][, '\"]]]+>)?(?:\\.[_$[:alpha:]][_$[:alnum:]]*|\\(['\"][_$[:alpha:]][_$[:alnum:]]*['\"]\\)|\\([_$[:alpha:]][_$\\.[:alnum:]]*(?:\\s+as\\s+.*?)?\\)))|(css|keyframes|injectGlobal))\\s*(`)"
 		beginCaptures:
 			"1":
@@ -36,7 +36,7 @@ patterns: [
 		]
 	}
 	{
-		contentName: "source.css"
+		contentName: "source.css.styled"
 		begin: "(\\.)(extend)(`)"
 		beginCaptures:
 			"1":
@@ -56,7 +56,7 @@ patterns: [
 		]
 	}
 	{
-		contentName: "source.css"
+		contentName: "source.css.styled"
 		begin: "([_$[:alpha:]][_$[:alnum:]]*\\.withComponent\\((?:['\"][_$[:alpha:]][_$[:alnum:]]*['\"]|[_$[:alpha:]][_$\\.[:alnum:]]*)\\))\\s*(?:(\\.)(extend))?(`)"
 		beginCaptures:
 			"1":
@@ -131,7 +131,7 @@ patterns: [
 		end: "(?<!\\G)(?<=`)"
 		patterns: [
 			{
-				contentName: "source.css"
+				contentName: "source.css.styled"
 				begin: "`"
 				beginCaptures:
 					"0":

@@ -1,13 +1,19 @@
 
 const DotTag = styled.div`
     color: #000;
-    font-size: 13;
+    font-size: 1em;
     font-size: ${props => props.theme.fontSize};
-    font-family: Helvetica;
-    ${mixin}
+    font-family: 'Helvetica';
+    ${mixin};
 `
 
-// https://www.google.se
+const DotTag2 = styled.div`
+{
+  color: #000;
+  font-size: 1214211em;
+  font-family: 'test';
+}
+`
 
 const StringTagname = styled('div')`
     color: #ff0000;
@@ -15,8 +21,4 @@ const StringTagname = styled('div')`
 
 const Component = styled(Component)`
     color: #ebebeb;
-`
-
-const SegmentedComponent = styled(Segmented.Component)`
-    padding: 3px;
 `
